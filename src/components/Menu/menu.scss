@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .menu {
     width: 180px;
     height: 100vh;
@@ -26,7 +28,7 @@
         list-style: none;
         font-size: 20px;
         font-weight: 500;
-        color: #000;
+        color: $black;
         width: 60%;
 
         li {

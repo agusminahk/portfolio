@@ -1,8 +1,8 @@
 @import '../../global.scss';
 
 .navbar {
-    background: #050505;
-    color: $title;
+    background: $black;
+    color: $red050;
     width: 100%;
     height: 43px;
     position: fixed;
@@ -31,7 +31,7 @@
                 letter-spacing: -0.03cm;
 
                 span {
-                    color: $red;
+                    color: $red600;
                 }
             }
 
@@ -48,7 +48,7 @@
                 }
 
                 .icon {
-                    color: $red;
+                    color: $red600;
                     font-size: 13px;
                     margin-right: 5px;
                     margin-left: 40px;
@@ -74,7 +74,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: $red;
+                    background-color: $red600;
                     transform-origin: left;
                     transition: all 1s ease;
                 }
@@ -84,17 +84,17 @@
 
     &.active {
         background-color: #fff;
-        color: #050505;
+        color: $black;
 
         .wrapper {
             .left {
                 .itemContainer {
                     a {
-                        color: #050505;
+                        color: $black;
                         text-decoration: none;
                     }
                     span {
-                        color: #050505;
+                        color: $black;
                     }
                 }
             }
@@ -103,14 +103,14 @@
         .hamburger {
             span {
                 &:first-child {
-                    background-color: #050505;
+                    background-color: $black;
                     transform: rotate(45deg);
                 }
                 &:nth-child(2) {
                     opacity: 0;
                 }
                 &:last-child {
-                    background-color: #050505;
+                    background-color: $black;
                     transform: rotate(-45deg);
                 }
             }

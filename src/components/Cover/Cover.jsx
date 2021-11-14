@@ -15,7 +15,6 @@ const Cover = () => {
             backSpeed: 70,
             strings: ['React.js', 'Node.js', 'MERN', 'Full Stack Web'],
         });
-        console.log(textRef);
     }, []);
 
     return (
