@@ -10,3 +10,11 @@ $red800: #822727;
 $red900: #63171b;
 
 $black: #050505;
+
+$width: 880px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content;
+    }
+}
