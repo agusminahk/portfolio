@@ -11,10 +11,26 @@ $red900: #63171b;
 
 $black: #050505;
 
-$width: 880px;
+$mobile: 868px;
+$desktop: 1024px;
+$iphone5: 330;
 
 @mixin mobile {
-    @media (max-width: #{$width}) {
+    @media (max-width: #{$mobile}) {
         @content;
+    }
+}
+
+@mixin iphone5 {
+    @media (max-width: #{$iphone5}) {
+        @content;
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: $desktop) {
+            @content;
+        }
     }
 }

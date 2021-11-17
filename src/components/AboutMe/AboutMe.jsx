@@ -10,7 +10,7 @@ const AboutMe = () => {
             <div className="left">
                 <div className="background"> </div>
                 <div className="content">
-                    <img src={perfil} />
+                    <img src={perfil} alt="Agusti Minahk" />
                     <a href="#">Download Resume</a>
                 </div>
             </div>
@@ -21,9 +21,9 @@ const AboutMe = () => {
                         <h2>
                             About <span>me</span>
                         </h2>
+                        <h3>Who am I?</h3>
                     </div>
                     <div className="text">
-                        <h3>Who am I?</h3>
                         <strong>
                             I'm Agustin Minahk, a web developer with excellent technical and soft skills.
                         </strong>
@@ -32,10 +32,13 @@ const AboutMe = () => {
                         <p> I'm looking for a full time position in web development,</p>
                         <p> where I can apply my knowledge and skills to continue improving.</p>
                         <strong> I am pursuing a bachelor's degree in software engineering.</strong>
-
-                        <img src={dev} />
-                        <p>I am currently taking Plataforma5 Bootcamp,</p>
-                        <p>where I boost my knowledge day after day.</p>
+                    </div>
+                    <div className="img">
+                        <img src={dev} alt="developer" />
+                        <p>
+                            I am currently taking Plataforma5 Bootcamp, where i boost my knowledge day after
+                            day.
+                        </p>
                     </div>
                 </div>
             </div>

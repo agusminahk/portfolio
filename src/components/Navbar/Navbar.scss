@@ -33,6 +33,10 @@
                 span {
                     color: $red600;
                 }
+
+                @include mobile {
+                    font-size: 2.1rem;
+                }
             }
 
             .itemContainer {
@@ -40,6 +44,10 @@
                 align-items: center;
                 margin-left: 50px;
                 margin-top: 5px;
+
+                @include mobile {
+                    display: none;
+                }
 
                 span {
                     font-size: 1rem;
@@ -83,11 +91,17 @@
     }
 
     &.active {
-        background-color: #fff;
-        background: -moz-linear-gradient(270deg, rgba(255, 255, 255) 20%, #ffdddd 100%);
-        background: -webkit-linear-gradient(270deg, rgba(255, 255, 255) 20%, #ffdddd 100%);
-        background: linear-gradient(270deg, rgba(255, 255, 255) 20%, #ffdddd 100%);
+        background-color: #274046;
+        background: -moz-linear-gradient(270deg, #274046 20%, #ffdddd 100%);
+        background: -webkit-linear-gradient(270deg, #274046 20%, #ffdddd 100%);
+        background: linear-gradient(270deg, #274046 20%, #ffdddd 100%);
         color: $black;
+
+        @include mobile {
+            background: -moz-linear-gradient(270deg, #274046 0%, #ffdddd 100%);
+            background: -webkit-linear-gradient(270deg, #274046 0%, #ffdddd 100%);
+            background: linear-gradient(270deg, #274046 0%, #ffdddd 100%);
+        }
 
         .wrapper {
             .left {

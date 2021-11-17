@@ -1,0 +1,218 @@
+@import '../global.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 300px;
+        height: 63vh;
+        margin: 10px auto;
+        border-radius: 20px;
+        box-shadow: 10px 25px 50px 0 rgba(0, 0, 0, 0.5);
+        transition: 1.3s ease;
+        position: absolute;
+        text-align: center;
+
+        @include mobile {
+            width: 95vw;
+            position: relative;
+            box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            @include mobile {
+                transform: scale(1.03);
+            }
+
+            .card__caption {
+                top: 60%;
+                transform: translateY(-50%);
+                @include mobile {
+                    top: 35%;
+                }
+            }
+
+            .card__image {
+                transform: scale(1.1) translateY(0px);
+
+                max-width: 85%;
+                @include mobile {
+                    max-width: 35%;
+                }
+            }
+
+            .card__thumb {
+                &::after {
+                    top: 0;
+                }
+            }
+
+            .card__snippet {
+                margin: 2rem auto;
+                @include mobile {
+                    margin: 1rem 5px;
+                }
+            }
+
+            .card__button {
+                margin: 3rem auto;
+                @include mobile {
+                    margin: 1rem auto;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+        &__thumb {
+            max-height: 510px;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+
+            @include mobile {
+                max-height: 400px;
+            }
+
+            &::after {
+                position: absolute;
+                top: calc(100% - 100px);
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%);
+                transition: 0.5s;
+
+                @include mobile {
+                    top: calc(100% - 14vw);
+                }
+            }
+        }
+
+        &__image {
+            transform: scale(1.9) translateY(30px);
+            max-width: 100%;
+            margin-top: 2.5rem;
+            transition: 0.6s ease-in-out;
+
+            @include mobile {
+                max-width: 100%;
+                margin-top: 0.5rem;
+            }
+        }
+
+        &__caption {
+            position: absolute;
+            top: calc(100% - 110px);
+            z-index: 1;
+            padding: 0 7px;
+            color: white;
+            transform: unset;
+            text-align: center;
+            transition: 0.5s;
+
+            @include mobile {
+                top: calc(100% - 17.5vw);
+            }
+        }
+
+        &__title {
+            margin-top: 2.5rem;
+            display: -webkit-box;
+            max-height: 85px;
+            overflow: hidden;
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: 1px;
+            text-shadow: 0px 1px 5px black;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+            @include mobile {
+                font-size: 1rem;
+                line-height: 15px;
+            }
+        }
+
+        &__snippet {
+            display: -webkit-box;
+            max-height: 150px;
+            margin: 3rem auto;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+
+            @include mobile {
+                margin: 1rem 5px;
+                line-height: 15px;
+                font-size: 11px;
+            }
+        }
+
+        &__tags {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            h4 {
+                padding: 7px 12px;
+                margin: 0 auto;
+                border-radius: 15px;
+                color: $red400;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+
+        &__button {
+            justify-content: space-around;
+            a {
+                display: inline-block;
+                padding: 8px 12px;
+                color: white;
+                border: 1px solid white;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                transition: 0.3s;
+                margin: 0px 12px;
+                bottom: 0;
+
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
+
+                @include mobile {
+                    padding: 5px 10px;
+                    font-size: 9px;
+                }
+            }
+
+            &__icon {
+                font-size: 1rem;
+                margin-right: 5px;
+                margin-bottom: -3px;
+
+                @include mobile {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
