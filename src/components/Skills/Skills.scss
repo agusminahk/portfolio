@@ -1,3 +1,129 @@
+@import '../../global.scss';
+
 .skills {
-    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/wallpapers/hex.png');
+    background-size: fill;
+    height: 100vh;
+    margin: 0 auto;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__title {
+            height: 65px;
+            margin: 2rem auto;
+            margin-top: 2.5rem;
+            font-weight: 500;
+            font-size: 2.3rem;
+            text-align: center;
+            overflow-y: hidden;
+            text-shadow: 0px 1px 1px #000;
+            -moz-text-shadow: 0 0 1px #000;
+            -webkit-text-shadow: 0 0 1px #000;
+            letter-spacing: 5px;
+            color: #050505;
+            position: relative;
+
+            span {
+                color: $red400;
+                filter: grayscale(1);
+                transition: all 0.4s ease;
+
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+            @include mobile {
+                height: 50px;
+                font-size: 1.1rem;
+                margin-top: 1.5rem;
+            }
+        }
+
+        &__images {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 10px 20px;
+
+                @include mobile {
+                    max-height: 90vh;
+                    margin: 0 auto;
+                }
+            }
+
+            li {
+                flex-grow: 1;
+                height: 17vh;
+                width: 17vw;
+                overflow-y: hidden;
+                padding: 10px 10px;
+
+                @include mobile {
+                    height: calc(95vh / 7);
+                    width: calc(95vw / 3);
+                    padding: 0px 0px;
+                }
+            }
+            img {
+                filter: grayscale(1);
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                vertical-align: bottom;
+                transition: 0.4s all ease;
+
+                &:hover {
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                }
+
+                @include mobile {
+                    height: 80%;
+                    width: 80%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        &__arrow {
+            width: 80px;
+            height: 80px;
+            margin-top: 50px;
+            text-align: center;
+
+            @include mobile {
+                display: none;
+            }
+
+            &__icon {
+                right: 50;
+                animation: arrowBlink 2s infinite;
+                width: 80px;
+                font-size: 300px;
+                color: #f56565;
+                transform: rotate(90deg) scale(2);
+                position: absolute;
+                filter: grayscale(1);
+                transition: 0.4s all ease;
+
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
 }

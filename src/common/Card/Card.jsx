@@ -2,14 +2,14 @@ import React from 'react';
 import { BiWorld } from 'react-icons/bi';
 import { BsGithub } from 'react-icons/bs';
 
-import './Card.scss';
+import './card.scss';
 
 const Card = ({ item }) => {
     return (
         <div className="container">
             <div className="card">
                 <figure className="card__thumb">
-                    <img src={item.img} alt={item.title} className="card__image" />
+                    <img src={item.img} alt={item.title} className={'card__image'} />
                     <figcaption className="card__caption">
                         <h2 className="card__title">{item.title}</h2>
                         <p className="card__snippet">{item.desc}</p>

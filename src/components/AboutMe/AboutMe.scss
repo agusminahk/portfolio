@@ -1,9 +1,9 @@
 @import '../../global.scss';
 
 .about {
-    background: $black;
     display: flex;
     flex-direction: row;
+    background-image: url('../../assets/wallpapers/hex.png');
 
     @include mobile {
         flex-direction: column;
@@ -13,16 +13,13 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
 
         .background {
             height: 100%;
             width: 100%;
-            background-image: url('../../assets/texture.jpg');
-            filter: blur(1px);
-            -webkit-filter: blur(1px);
+            background-image: url('../../assets/wallpapers/hex.png');
             z-index: 1;
-            background-size: cover;
+            background-size: fill;
             position: relative;
         }
 
@@ -30,19 +27,20 @@
             flex: 1;
             display: flex;
             flex-direction: column;
+            align-items: center;
             position: absolute;
             z-index: 3;
             overflow: hidden;
-            height: 100%;
+            height: 80%;
             width: 50vw;
 
             @include mobile {
                 height: 45vh;
                 width: 100vw;
-                justify-content: space-evenly;
+                justify-content: space-around;
             }
 
-            a {
+            .pdf {
                 padding: 0.7rem 1.7rem;
                 margin: 0 auto;
                 text-decoration: none;
@@ -60,7 +58,7 @@
                 }
 
                 @include mobile {
-                    margin: 0.8rem auto;
+                    // margin: 0.2rem auto;
                     padding: 0.5rem 1rem;
                 }
             }
@@ -76,111 +74,140 @@
                 box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
 
                 @include mobile {
-                    margin: 0 auto;
+                    margin: 10px auto;
                     width: 200px;
                     height: 200px;
                     border-radius: 100px;
                 }
             }
         }
+
+        .arrow {
+            width: 90px;
+            height: 100px;
+            right: 0;
+
+            .icon {
+                right: 47vw;
+                animation: arrowBlink 2s infinite;
+                width: 80px;
+                font-size: 3rem;
+                color: #f56565;
+                transform: rotate(90deg);
+                position: absolute;
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
     }
     .right {
         flex: 1;
         display: flex;
-        background-color: #fff;
+        background-image: url('../../assets/wallpapers/hex.png');
+        background-size: fill;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50vw;
+        align-items: center;
+        justify-content: space-evenly;
 
-        .content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 50vw;
-            align-items: center;
-            justify-content: space-evenly;
+        @include mobile {
+            justify-content: space-between;
+            width: 100vw;
+        }
+
+        .title {
+            min-height: 70px;
+            margin-top: 2rem;
+            margin-bottom: -1rem;
+            color: $black;
+            font-weight: 500;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-align: center;
+            overflow-y: hidden;
+
+            text-shadow: 0px 1px 1px #000;
+            -moz-text-shadow: 0 0 1px #000;
+            -webkit-text-shadow: 0 0 1px #000;
+
+            span {
+                color: $red400;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                margin: 0.5rem;
+                margin-top: 0.7rem;
+
+                @include mobile {
+                    font-size: 0.8rem;
+                    margin: 0.3rem;
+                }
+            }
 
             @include mobile {
-                width: 100vw;
+                font-size: 1rem;
+                margin: 0.3rem auto;
+                min-height: 50px;
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.5rem 1.5rem;
+            margin-top: 1.5rem;
+            overflow-y: hidden;
+
+            @include mobile {
+                margin: 0.2rem auto;
+                justify-content: flex-start;
+                min-height: 115px;
             }
 
-            .title {
-                min-height: 70px;
-                margin-top: 2rem;
-                margin-bottom: -1rem;
-                color: $black;
-                font-weight: 500;
-                font-size: 2rem;
-                text-transform: uppercase;
+            > * {
                 text-align: center;
-                text-shadow: 0px 1px 1px #000;
-                -moz-text-shadow: 0 0 1px #000;
-                -webkit-text-shadow: 0 0 1px #000;
-
-                span {
-                    color: $red400;
-                }
-
-                h3 {
-                    font-size: 1.3rem;
-                    margin: 0.5rem;
-
-                    @include mobile {
-                        font-size: 0.8rem;
-                        margin: 0.3rem;
-                    }
-                }
-
-                @include mobile {
-                    margin-top: 10px;
-                    font-size: 1rem;
-                }
-            }
-
-            .text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 1.5rem 1.5rem;
-
-                @include mobile {
-                    margin: 0.2rem auto;
-                    justify-content: flex-start;
-                    min-height: 115px;
-                }
-
-                > * {
-                    text-align: center;
-                    font-size: 0.8rem;
-                    flex-wrap: wrap;
-                    min-height: 30px;
-
-                    @include mobile {
-                        font-size: 0.6rem;
-                        min-height: 22px;
-                        margin: -2px 0;
-                    }
-                }
-                strong {
-                    margin: 0.2rem auto;
-                }
-            }
-
-            .img {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin: 0 4rem;
-                line-height: 30px;
                 font-size: 0.8rem;
+                flex-wrap: wrap;
+                min-height: 30px;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
                 @include mobile {
                     font-size: 0.6rem;
                     min-height: 22px;
-                    line-height: 19px;
-                    margin: 0 1rem;
+                    margin: -2px 0;
+                }
+            }
+            strong {
+                margin: 0.2rem auto;
+            }
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0 4rem;
+            line-height: 30px;
+            font-size: 0.8rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            @include mobile {
+                font-size: 0.6rem;
+                min-height: 22px;
+                line-height: 19px;
+                margin: 0 1rem;
+                img {
+                    width: 90%;
+                    height: 90%;
                 }
             }
         }

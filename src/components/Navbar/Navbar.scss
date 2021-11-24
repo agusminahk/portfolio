@@ -2,13 +2,13 @@
 
 .navbar {
     background: $black;
-    color: $red100;
+    color: #fff;
     width: 100%;
     height: 60px;
     position: fixed;
     top: 0;
     z-index: 101;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
 
     .wrapper {
         margin-top: 5px;
@@ -91,27 +91,25 @@
     }
 
     &.active {
-        background-color: #274046;
-        background: -moz-linear-gradient(270deg, #274046 20%, #ffdddd 100%);
-        background: -webkit-linear-gradient(270deg, #274046 20%, #ffdddd 100%);
-        background: linear-gradient(270deg, #274046 20%, #ffdddd 100%);
-        color: $black;
+        background: -moz-linear-gradient(to left, #434343 22%, #050505 100%);
+        background: -webkit-linear-gradient(to left, #434343 22%, #050505 100%);
+        background: linear-gradient(to left, #434343 22%, #050505 100%);
 
         @include mobile {
-            background: -moz-linear-gradient(270deg, #274046 0%, #ffdddd 100%);
-            background: -webkit-linear-gradient(270deg, #274046 0%, #ffdddd 100%);
-            background: linear-gradient(270deg, #274046 0%, #ffdddd 100%);
+            background: -moz-linear-gradient(to left, #434343 22%, #050505 100%);
+            background: -webkit-linear-gradient(to left, #434343 22%, #050505 100%);
+            background: linear-gradient(to left, #434343 22%, #050505 100%);
         }
 
         .wrapper {
             .left {
                 .itemContainer {
                     a {
-                        color: $black;
+                        color: #fff;
                         text-decoration: none;
                     }
                     span {
-                        color: $black;
+                        color: #fff;
                     }
                 }
             }
@@ -120,14 +118,14 @@
         .hamburger {
             span {
                 &:first-child {
-                    background-color: $black;
+                    background-color: $red500;
                     transform: rotate(45deg);
                 }
                 &:nth-child(2) {
                     opacity: 0;
                 }
                 &:last-child {
-                    background-color: $black;
+                    background-color: $red500;
                     transform: rotate(-45deg);
                 }
             }

@@ -1,4 +1,4 @@
-@import '../global.scss';
+@import '../../global.scss';
 
 .container {
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-
+    overflow-y: hidden;
     @include mobile {
         flex-direction: column;
     }
@@ -16,19 +16,22 @@
         height: 63vh;
         margin: 10px auto;
         border-radius: 20px;
-        box-shadow: 10px 25px 50px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 4px 2px 0 rgba(0, 0, 0, 0.5);
         transition: 1.3s ease;
         position: absolute;
         text-align: center;
+        background-color: #181818;
 
         @include mobile {
             width: 95vw;
+            height: 25vh;
             position: relative;
             box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.5);
         }
 
         &:hover {
             transform: scale(1.05);
+            background-color: #18181800;
             @include mobile {
                 transform: scale(1.03);
             }
@@ -84,12 +87,12 @@
 
             &::after {
                 position: absolute;
-                top: calc(100% - 100px);
+                top: calc(100% - 70px);
                 display: block;
                 content: '';
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.12) 100%);
+                background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
                 transition: 0.5s;
 
                 @include mobile {
@@ -99,7 +102,7 @@
         }
 
         &__image {
-            transform: scale(1.9) translateY(30px);
+            transform: scale(2.45) translateX(1px);
             max-width: 100%;
             margin-top: 2.5rem;
             transition: 0.6s ease-in-out;
@@ -112,7 +115,7 @@
 
         &__caption {
             position: absolute;
-            top: calc(100% - 110px);
+            top: calc(100% - 90px);
             z-index: 1;
             padding: 0 7px;
             color: white;
@@ -130,10 +133,10 @@
             display: -webkit-box;
             max-height: 85px;
             overflow: hidden;
-            font-size: 23px;
+            font-size: 19px;
+            font-family: 'Julius Sans One';
             line-height: 28px;
             letter-spacing: 1px;
-            text-shadow: 0px 1px 5px black;
             text-overflow: ellipsis;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;

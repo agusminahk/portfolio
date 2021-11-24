@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowForwardIos } from '@material-ui/icons';
 
 import './aboutMe.scss';
 import dev from '../../assets/dev.svg';
@@ -10,9 +11,14 @@ const AboutMe = () => {
             <div className="left">
                 <div className="background"> </div>
                 <div className="content">
-                    <img src={perfil} alt="Agusti Minahk" />
-                    <a href="#">Download Resume</a>
+                    <img src={perfil} alt="Agustin Minahk" />
+                    <a href="#" className="pdf">
+                        Download Resume
+                    </a>
                 </div>
+                <a href="#projects" className="arrow">
+                    <ArrowForwardIos className="icon" />
+                </a>
             </div>
             <div className="right">
                 <div className="background"></div>

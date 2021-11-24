@@ -4,9 +4,9 @@
     width: 280px;
     height: 100vh;
     background: #274046;
-    background: -moz-linear-gradient(to bottom, #274046 20%, #fed7d7 100%);
-    background: -webkit-linear-gradient(to bottom, #274046 20%, #fed7d7 100%);
-    background: linear-gradient(to bottom, #274046 20%, #fed7d7 100%);
+    background: -moz-linear-gradient(to top, #050505 2%, #434343 89%);
+    background: -webkit-linear-gradient(to top, #050505 2%, #434343 89%);
+    background: linear-gradient(to top, #050505 2%, #434343 89%);
     position: fixed;
     top: 0;
     right: -300px;
@@ -22,9 +22,9 @@
         width: 100%;
         right: -1000px;
 
-        background: -moz-linear-gradient(to left, #274046 0%, #fed7d7 100%);
-        background: -webkit-linear-gradient(to left, #274046 0%, #fed7d7 100%);
-        background: linear-gradient(to left, #274046 0%, #fed7d7 100%);
+        background: -moz-linear-gradient(to right, #050505 0%, #434343 100%);
+        background: -webkit-linear-gradient(to right, #050505 0%, #434343 100%);
+        background: linear-gradient(to right, #050505 0%, #434343 100%);
     }
 
     &.active {
@@ -38,7 +38,7 @@
         list-style: none;
         font-size: 25px;
         font-weight: 500;
-        color: $black;
+        color: #fff;
         width: 60%;
 
         text-align: center;
