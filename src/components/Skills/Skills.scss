@@ -9,6 +9,8 @@
     background-size: fill;
     height: 100vh;
     margin: 0 auto;
+    vertical-align: top;
+    overflow-y: hidden;
 
     @include mobile {
         flex-direction: column;
@@ -23,8 +25,7 @@
 
         &__title {
             height: 65px;
-            margin: 2rem auto;
-            margin-top: 2.5rem;
+            margin-top: 2rem;
             font-weight: 500;
             font-size: 2.3rem;
             text-align: center;
@@ -53,15 +54,19 @@
         }
 
         &__images {
+            overflow-y: hidden;
             ul {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 margin: 10px 20px;
+                margin-bottom: -10px;
 
                 @include mobile {
                     max-height: 90vh;
+                    margin-bottom: 0px;
                     margin: 0 auto;
+                    overflow-y: hidden;
                 }
             }
 
