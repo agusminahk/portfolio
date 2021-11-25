@@ -40,6 +40,24 @@
                 justify-content: space-around;
             }
 
+            img {
+                margin: 3rem auto;
+                object-fit: fill;
+                width: 400px;
+                height: 400px;
+                border-radius: 200px;
+                -webkit-box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
+                -moz-box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
+                box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
+
+                @include mobile {
+                    margin: 10px auto;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100px;
+                }
+            }
+
             .pdf {
                 padding: 0.7rem 1.7rem;
                 margin: 0 auto;
@@ -61,24 +79,6 @@
                 @include mobile {
                     // margin: 0.2rem auto;
                     padding: 0.5rem 1rem;
-                }
-            }
-
-            img {
-                margin: 3rem auto;
-                object-fit: fill;
-                width: 400px;
-                height: 400px;
-                border-radius: 200px;
-                -webkit-box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
-                -moz-box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
-                box-shadow: -17px 24px 86px 12px rgba(0, 0, 0, 0.62);
-
-                @include mobile {
-                    margin: 10px auto;
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 100px;
                 }
             }
         }

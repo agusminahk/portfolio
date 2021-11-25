@@ -17,6 +17,8 @@ import redux from '../assets/skills/redux.png';
 import socket from '../assets/skills/socket.png';
 import mocha from '../assets/skills/mocha.png';
 import jasmine from '../assets/skills/jasmine.png';
+import jwt from '../assets/skills/jwt.png';
+import passport from '../assets/skills/passport.png';
 
 export const skills = [
     react,
@@ -28,19 +30,21 @@ export const skills = [
     mongoose,
     postgresql,
     sequelize,
+    passport,
+    jwt,
     chakra,
     socket,
-    sass,
     jasmine,
-    git,
     mocha,
+    sass,
+    git,
 ];
 
 export const projects = [
     {
         title: 'BIXBAX OMDB',
         desc: 'Performed in a MERN environment. This is an individual project. ',
-        stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'ChakraUI'],
+        stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'Passport', 'ChakraUI'],
         img: bixbax,
         url: 'https://unsplash.com/',
         repo: 'https://github.com/agusminahk/omdb',
@@ -48,7 +52,7 @@ export const projects = [
     {
         title: 'RYNOK E-COMMERCE',
         desc: 'Performed in a MERN environment. This is a team project. ',
-        stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'ChakraUI', 'Git'],
+        stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'ChakraUI', 'Passport', 'JWT'],
         img: rynok,
         url: 'https://unsplash.com/',
         repo: 'https://github.com/agusminahk/ecommerce',

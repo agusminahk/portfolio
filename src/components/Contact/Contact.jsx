@@ -23,43 +23,43 @@ const Contact = () => {
                     aria-label="Gmail"
                     target="_blank"
                 >
-                    <img src={gmail} />
+                    <img src={gmail} alt="Gmail" />
                     <span>Gmail</span>
                 </a>
                 <a
-                    href="#"
+                    href="https://www.linkedin.com/in/agustin-minahk/"
                     className="social-buttons__button social-button"
                     aria-label="LinkedIn"
                     target="_blank"
                 >
-                    <img src={linkedin} />
+                    <img src={linkedin} alt="LinkedIn" />
                     <span>LinkedIn</span>
                 </a>
                 <a
-                    href="#"
+                    href="https://github.com/agusminahk"
                     className="social-buttons__button social-button"
                     aria-label="GitHub"
                     target="_blank"
                 >
-                    <img src={github} />
+                    <img src={github} alt="GitHub" />
                     <span>GitHub</span>
                 </a>
                 <a
-                    href="#"
+                    href="https://wa.me/5493517696435"
                     className="social-buttons__button social-button"
                     aria-label="WhatsApp"
                     target="_blank"
                 >
-                    <img src={wpp} />
+                    <img src={wpp} alt="WhatsApp" />
                     <span>WhatsApp</span>
                 </a>
                 <a
-                    href="#"
+                    href="https://www.instagram.com/agusminahk/"
                     className="social-buttons__button social-button "
                     aria-label="Instagram"
                     target="_blank"
                 >
-                    <img src={ig} />
+                    <img src={ig} alt="Instagram" />
                     <span>Instagram</span>
                 </a>
             </div>
