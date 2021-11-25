@@ -16,7 +16,7 @@ function App() {
         <div className="app">
             <Navbar menu={menuIsOpen} setMenu={setMenuIsOpen} />
             <Menu menu={menuIsOpen} setMenu={setMenuIsOpen} />
-            <div className="sections">
+            <div className="app__sections">
                 <Cover />
                 <AboutMe />
                 <Projects />
