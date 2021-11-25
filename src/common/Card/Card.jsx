@@ -14,16 +14,16 @@ const Card = ({ item }) => {
                         <h2 className="card__title">{item.title}</h2>
                         <p className="card__snippet">{item.desc}</p>
                         <div className="card__button">
-                            <a href="">
+                            <a href="" target="_blank">
                                 <BiWorld className="card__button__icon" /> Website
                             </a>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <BsGithub className="card__button__icon" /> Repository
                             </a>
                         </div>
                         <div className="card__tags">
-                            {item.stack.map((tag) => (
-                                <h4>{tag}</h4>
+                            {item.stack.map((tag, idx) => (
+                                <h4 key={idx}>{tag}</h4>
                             ))}
                         </div>
                     </figcaption>

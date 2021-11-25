@@ -16,7 +16,7 @@ export default function Skills() {
                 <div className="skills__content__images">
                     <ul>
                         {skills.map((e, i) => (
-                            <li>
+                            <li key={i}>
                                 <img src={e}></img>
                             </li>
                         ))}

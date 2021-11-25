@@ -1,6 +1,6 @@
-import bixbax from '../assets/bixbax.png';
-import rynok from '../assets/rynok.png';
-import portfolio from '../assets/portfolio.png';
+import bixbax from '../assets/projects/bixbax.png';
+import rynok from '../assets/projects/rynok.png';
+import portfolio from '../assets/projects/portfolio.png';
 
 import node from '../assets/skills/node.png';
 import express from '../assets/skills/express.png';
@@ -14,8 +14,9 @@ import git from '../assets/skills/git.png';
 import chakra from '../assets/skills/chakra.png';
 import sass from '../assets/skills/sass.png';
 import redux from '../assets/skills/redux.png';
-import npm from '../assets/skills/npm.png';
 import socket from '../assets/skills/socket.png';
+import mocha from '../assets/skills/mocha.png';
+import jasmine from '../assets/skills/jasmine.png';
 
 export const skills = [
     react,
@@ -29,9 +30,10 @@ export const skills = [
     sequelize,
     chakra,
     socket,
-    npm,
-    git,
     sass,
+    jasmine,
+    git,
+    mocha,
 ];
 
 export const projects = [

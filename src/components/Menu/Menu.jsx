@@ -8,10 +8,10 @@ const Menu = ({ menu, setMenu }) => {
     return (
         <div className={'menu ' + (menu && 'active')}>
             <ul>
-                {categorys.map((category) => {
+                {categorys.map((category, idx) => {
                     const [first] = category.split(' ');
                     return (
-                        <li onClick={() => setMenu(!menu)}>
+                        <li key={idx} onClick={() => setMenu(!menu)}>
                             <a href={`#${first.toLowerCase()}`}>{category}</a>
                         </li>
                     );

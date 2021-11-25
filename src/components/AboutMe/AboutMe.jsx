@@ -2,8 +2,8 @@ import React from 'react';
 import { ArrowForwardIos } from '@material-ui/icons';
 
 import './aboutMe.scss';
-import dev from '../../assets/dev.svg';
-import perfil from '../../assets/perfil.jpg';
+import dev from '../../assets/about/dev.svg';
+import perfil from '../../assets/about/perfil.jpg';
 
 const AboutMe = () => {
     return (

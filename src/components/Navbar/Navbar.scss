@@ -7,8 +7,8 @@
     height: 60px;
     position: fixed;
     top: 0;
-    z-index: 101;
-    transition: all 1s ease-in-out;
+    z-index: 31;
+    transition: all 0.5s ease;
 
     .wrapper {
         margin-top: 5px;
@@ -84,7 +84,7 @@
                     height: 3px;
                     background-color: $red600;
                     transform-origin: left;
-                    transition: all 1s ease;
+                    transition: all 0.5s ease;
                 }
             }
         }
@@ -99,20 +99,6 @@
             background: -moz-linear-gradient(to left, #434343 22%, #050505 100%);
             background: -webkit-linear-gradient(to left, #434343 22%, #050505 100%);
             background: linear-gradient(to left, #434343 22%, #050505 100%);
-        }
-
-        .wrapper {
-            .left {
-                .itemContainer {
-                    a {
-                        color: #fff;
-                        text-decoration: none;
-                    }
-                    span {
-                        color: #fff;
-                    }
-                }
-            }
         }
 
         .hamburger {

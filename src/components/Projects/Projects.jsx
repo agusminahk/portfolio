@@ -15,8 +15,8 @@ const Projects = () => {
                 </h2>
             </div>
             <div className="container animate__animated animate__fadeInUp">
-                {projects.map((e) => (
-                    <Card item={e} />
+                {projects.map((e, i) => (
+                    <Card item={e} key={i} />
                 ))}
             </div>
             <a href="#skills" className="arrow">

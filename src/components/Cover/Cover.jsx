@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { ArrowForwardIos } from '@material-ui/icons';
 import { init } from 'ityped';
 
-import production_video from '../../assets/production_video.mp4';
+import production_video from '../../assets/wallpapers/production_video.mp4';
 import './cover.scss';
 
 const Cover = () => {

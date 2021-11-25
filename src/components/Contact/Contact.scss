@@ -1,3 +1,99 @@
+@import '../../global.scss';
+
 .contact {
-    background-color: #fff;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('../../assets/wallpapers/hex.png');
+    background-size: fill;
+
+    .title {
+        height: 65px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 3rem;
+        text-align: center;
+        overflow-y: hidden;
+        text-shadow: 0px 1px 1px #000;
+        -moz-text-shadow: 0 0 1px #000;
+        -webkit-text-shadow: 0 0 1px #000;
+        letter-spacing: 10px;
+        color: $black;
+        position: relative;
+
+        span {
+            color: $red400;
+        }
+        @include mobile {
+            height: 50px;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .social-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: -10px;
+
+        &__button {
+            margin: 10px 50px 0;
+        }
+    }
+
+    .social-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        border-radius: 100%;
+        text-align: center;
+        overflow-y: hidden;
+        filter: grayscale(0.5);
+        transition: all 0.4s ease;
+        margin-bottom: 10px;
+
+        span {
+            color: $black;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: none;
+            transition: all 0.4s ease;
+            position: relative;
+            text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.4);
+        }
+
+        img {
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover {
+            margin-top: 20px;
+            filter: grayscale(0);
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            flex-direction: row;
+            justify-content: space-around;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 30%;
+                border-radius: 100px;
+                background-color: #fff;
+            }
+
+            span {
+                display: initial;
+            }
+        }
+    }
 }
