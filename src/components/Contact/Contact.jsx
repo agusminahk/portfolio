@@ -1,8 +1,5 @@
 import React from 'react';
 
-import { BsGoogle } from 'react-icons/bs';
-import { SiGmail } from 'react-icons/si';
-
 import './contact.scss';
 import gmail from '../../assets/socials/gmail.png';
 import ig from '../../assets/socials/ig.png';
@@ -22,6 +19,7 @@ const Contact = () => {
                     className="social-buttons__button  social-button"
                     aria-label="Gmail"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img src={gmail} alt="Gmail" />
                     <span>Gmail</span>
@@ -31,6 +29,7 @@ const Contact = () => {
                     className="social-buttons__button social-button"
                     aria-label="LinkedIn"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img src={linkedin} alt="LinkedIn" />
                     <span>LinkedIn</span>
@@ -40,6 +39,7 @@ const Contact = () => {
                     className="social-buttons__button social-button"
                     aria-label="GitHub"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img src={github} alt="GitHub" />
                     <span>GitHub</span>
@@ -49,6 +49,7 @@ const Contact = () => {
                     className="social-buttons__button social-button"
                     aria-label="WhatsApp"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img src={wpp} alt="WhatsApp" />
                     <span>WhatsApp</span>
@@ -58,6 +59,7 @@ const Contact = () => {
                     className="social-buttons__button social-button "
                     aria-label="Instagram"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <img src={ig} alt="Instagram" />
                     <span>Instagram</span>

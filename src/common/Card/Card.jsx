@@ -15,10 +15,10 @@ const Card = ({ item }) => {
                         <h2 className="card__title">{title}</h2>
                         <p className="card__snippet">{desc}</p>
                         <div className="card__button">
-                            <a href={url} target="_blank">
+                            <a href={url} target="_blank" rel="noreferrer">
                                 <BiWorld className="card__button__icon" /> Website
                             </a>
-                            <a href={repo} target="_blank">
+                            <a href={repo} target="_blank" rel="noreferrer">
                                 <BsGithub className="card__button__icon" /> Repository
                             </a>
                         </div>

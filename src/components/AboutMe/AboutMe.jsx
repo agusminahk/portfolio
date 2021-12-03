@@ -20,13 +20,16 @@ const AboutMe = () => {
                             type="application/pdf"
                             target="_blank"
                             className="about__left__content__flex__link"
+                            rel="noreferrer"
                         >
                             CURRICULUM {'(EN)'}
                         </a>
+
                         <a
                             href={resumeSpanish}
                             type="application/pdf"
                             target="_blank"
+                            rel="noreferrer"
                             className="about__left__content__flex__link"
                         >
                             CURRICULUM {'(ES)'}

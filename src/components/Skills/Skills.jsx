@@ -17,7 +17,7 @@ export default function Skills() {
                     <ul>
                         {skills.map((e, i) => (
                             <li key={i}>
-                                <img src={e}></img>
+                                <img src={e} alt={e + ' skill'}></img>
                             </li>
                         ))}
                     </ul>
