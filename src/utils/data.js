@@ -46,7 +46,7 @@ export const projects = [
         desc: 'Performed in a MERN environment. This is an individual project. ',
         stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'Passport', 'ChakraUI'],
         img: bixbax,
-        url: 'https://unsplash.com/',
+        url: 'https://bixbax.herokuapp.com/',
         repo: 'https://github.com/agusminahk/omdb',
     },
     {
@@ -54,7 +54,7 @@ export const projects = [
         desc: 'Performed in a MERN environment. This is a team project. ',
         stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'ChakraUI', 'Passport', 'JWT'],
         img: rynok,
-        url: 'https://unsplash.com/',
+        url: 'https://rynokcommerce.herokuapp.com/',
         repo: 'https://github.com/agusminahk/ecommerce',
     },
     {

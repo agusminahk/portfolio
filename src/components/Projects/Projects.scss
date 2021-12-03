@@ -55,13 +55,13 @@
         width: 90px;
         height: 90px;
         text-align: center;
+
         &__icon {
             right: 50;
             animation: arrowBlink 2s infinite;
             width: 80px;
-            font-size: 3rem;
             color: #f56565;
-            transform: rotate(90deg);
+            transform: rotate(90deg) scale(1.9);
             position: relative;
         }
 

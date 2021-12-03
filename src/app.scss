@@ -12,7 +12,7 @@
 .app {
     height: 100vh;
 
-    &__sections {
+    .sections {
         width: 100%;
         height: calc(100vh - 60px);
         position: relative;

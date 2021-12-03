@@ -23,7 +23,7 @@ const Cover = () => {
             <span />
 
             <h1>
-                Agustin Minahk
+                Agustín Minahk
                 <p>
                     <span ref={textRef}></span> Developer
                 </p>

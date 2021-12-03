@@ -3,8 +3,9 @@ import { ArrowForwardIos } from '@material-ui/icons';
 
 import './aboutMe.scss';
 import dev from '../../assets/about/dev.svg';
-import perfil from '../../assets/about/perfil.jpg';
-import resume from '../../assets/about/resume.pdf';
+import perfil from '../../assets/about/perfil.png';
+import resumeEnglish from '../../assets/about/resume.pdf';
+import resumeSpanish from '../../assets/about/resumen.pdf';
 
 const AboutMe = () => {
     return (
@@ -12,15 +13,25 @@ const AboutMe = () => {
             <div className="about__left">
                 <div className="about__left__background"> </div>
                 <div className="about__left__content">
-                    <img src={perfil} alt="Agustin Minahk" />
-                    <a
-                        href={resume}
-                        type="application/pdf"
-                        target="_blank"
-                        className="about__left__content__link"
-                    >
-                        SEE MY RESUME
-                    </a>
+                    <img src={perfil} alt="Agustín Minahk" />
+                    <div className="about__left__content__flex">
+                        <a
+                            href={resumeEnglish}
+                            type="application/pdf"
+                            target="_blank"
+                            className="about__left__content__flex__link"
+                        >
+                            CURRICULUM {'(EN)'}
+                        </a>
+                        <a
+                            href={resumeSpanish}
+                            type="application/pdf"
+                            target="_blank"
+                            className="about__left__content__flex__link"
+                        >
+                            CURRICULUM {'(ES)'}
+                        </a>
+                    </div>
                 </div>
                 <a href="#projects" className="about__left__arrow">
                     <ArrowForwardIos className="about__left__arrow__icon" />
@@ -36,9 +47,7 @@ const AboutMe = () => {
                     <h3>Who am I?</h3>
                 </div>
                 <div className="about__right__text">
-                    <strong>
-                        I'm Agustin Minahk, a web developer with excellent technical and soft skills.
-                    </strong>
+                    <strong>I'm Agustín Minahk, a web developer with excellent technical and soft skills.</strong>
 
                     <p>I love collaborating and working as a team. </p>
                     <p> I'm looking for a full time position in web development,</p>
@@ -47,9 +56,7 @@ const AboutMe = () => {
                 </div>
                 <div className="about__right__img">
                     <img src={dev} alt="developer" />
-                    <p>
-                        I am currently taking Plataforma5 Bootcamp, where i boost my knowledge day after day.
-                    </p>
+                    <p>I am currently taking Plataforma5 Bootcamp, where i boost my knowledge day after day.</p>
                 </div>
             </div>
         </div>
