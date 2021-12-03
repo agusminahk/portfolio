@@ -62,7 +62,7 @@ export const projects = [
         desc: 'My first personal Portfolio using Sass and React.',
         stack: ['Reactjs', 'Sass'],
         img: portfolio,
-        url: 'https://unsplash.com/',
+        url: 'https://agusminahk.github.io/portfolio/',
         repo: 'https://github.com/agusminahk/portfolio',
     },
 ];
