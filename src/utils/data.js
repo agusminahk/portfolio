@@ -51,7 +51,7 @@ export const projects = [
     },
     {
         title: 'RYNOK E-COMMERCE',
-        desc: 'Performed in a MERN environment. This is a team project. ',
+        desc: 'Performed in a MERN environment. This is a team project. This site is not responsive yet. ',
         stack: ['MongoDB', 'Express', 'Nodejs', 'Reactjs', 'Redux', 'ChakraUI', 'Passport', 'JWT'],
         img: rynok,
         url: 'https://rynokcommerce.herokuapp.com/',
